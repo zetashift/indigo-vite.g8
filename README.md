@@ -22,6 +22,17 @@ The next step is to start the development server. To do this run the following i
 npm run dev
 ```
 
+
+# Build for release
+
+To build for release, run the following command:
+
+```sh
+npm run build
+```
+
+The optimized assets will be saved into `./dist`.
+
 Template license
 ----------------
 Written in 2023 by zetashift
