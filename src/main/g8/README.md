@@ -7,5 +7,5 @@ First thing in order to run this project, is to install vite dependency. To do i
 `npm install`
 
 Then run `sbt fastLinkJS` directly from shell or just `~fastLinkJS` from SBT shell instance.
-The next step is to start the server. To do this run `npm run dev` in your terminal.
+The next step is to start the development server. To do this run `npm run dev` in your terminal.
 
