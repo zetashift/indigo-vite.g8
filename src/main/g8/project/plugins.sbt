@@ -1,2 +1,2 @@
-addSbtPlugin("org.scala-js" % "sbt-scalajs" % "1.13.2")
-addSbtPlugin("io.indigoengine" % "sbt-indigo" % "0.15.0-RC3")
+addSbtPlugin("org.scala-js" % "sbt-scalajs" % "1.14.0")
+addSbtPlugin("io.indigoengine" % "sbt-indigo" % "0.15.2")
