@@ -1,4 +1,11 @@
 import org.scalajs.linker.interface.ModuleSplitStyle
+import indigoplugin.IndigoOptions
+
+lazy val gameOptions =
+  IndigoOptions.defaults
+    .withTitle("$full_title$")
+    .withWindowSize(1280, 720)
+    .withAssetDirectory(os.RelPath.rel / "assets")
 
 lazy val root = project
   .in(file("."))
@@ -12,14 +19,10 @@ lazy val root = project
         .withModuleSplitStyle(
           ModuleSplitStyle.SmallModulesFor(List("$name$"))
         )
-    }
+    },
+    indigoOptions := gameOptions
   )
   .settings(
-    showCursor := true,
-    title := "$full_title$",
-    gameAssetsDirectory := "assets",
-    windowStartWidth := 720, // Width of Electron window, used with `indigoRun`.
-    windowStartHeight := 480, // Height of Electron window, used with `indigoRun`.
     libraryDependencies ++= Seq(
       "io.indigoengine" %%% "indigo" % "0.15.2"
     )
